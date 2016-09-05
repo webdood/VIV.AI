@@ -22,7 +22,7 @@ Depending on the size of the project, if it is small and simple enough the refer
 
 ## Tests
 
-Describe and show how to run the tests with code examples.
+Jasmine tests go in spec folder
 
 ## Contributors
 
