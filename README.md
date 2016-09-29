@@ -10,7 +10,8 @@ This code sample is intended to convey a facility with a variety of APIs as well
 
 ## Motivation
 
-I thought I'd have some fun and come up with a way to see "Photos Near Me" triggered by a big button on the page
+I thought I'd have some fun and come up with a way to see "Photos Near Me" triggered by a big button on the page.
+
 One of the most inspiring apps that I use all the time is "GasBuddy". It has a single button on the page "Find Gas Near Me"
 and is beautiful in its simplicity.  I also thought I'd have some fun playing with Electron to build a cross-platform chromeless web app.
 
@@ -21,7 +22,7 @@ Finally, when asked to locate Photos Near Me, the app uses Flickr's search API
 I used a block of code I wrote several years ago called xScroller for the carousel. If I had time, I would most likely
 adapt the display of the images to use a "CoverFlow" style interface.
 In the code itself, I wanted to illustrate a facility with newer ES6 concepts like Promises and Let and also the use of NODE modules
-like the REQUEST Object.  Note that this entire project is versioned under GIT uses NPM.
+like the REQUEST Object.  Note that this entire project is versioned under GIT and uses NPM.
 
 I also hope you will appreciate my CSS skills and are familiar with SASS. Take a look at viv.scss.
 Also note the tie-in with VIV.AI screen image I got from the website. Note the border-radius of input elements and placement relative to your brand.
@@ -29,13 +30,13 @@ Also note the tie-in with VIV.AI screen image I got from the website. Note the b
 ## Future
 There are any number of refinements I would like to make to this app if I had the time including:
 
-Currently does not support manually changing the City and subsequent conversion to lat/lon. Only supports manual update of Zip code
-and Lat/Lon from IP Address.
-No validation on input elements.
-Might be cool to add some data bindings. No time to research how best to go about this in Electron.
-Refactor code to be more name-spaced (Typically for quick POCs I use dangling functions. Once the app gets a bit more complex I bring everything in under namespaced JS)
-Play with multi-page Electron windows, possibly loading the JSON structure for the images in one window and binding images to urls in another
-True Cross-Platform testing
+1. Currently does not support manually changing the City and subsequent conversion to lat/lon. 
+2. Only supports manual update of Zip code and Lat/Lon from IP Address.
+3. No validation on input elements.
+4. Might be cool to add some data bindings. No time to research how best to go about this in Electron.
+5. Refactor code to be more name-spaced (Typically for quick POCs I use dangling functions. Once the app gets a bit more complex I bring everything in under namespaced JS)
+6. Play with multi-page Electron windows, possibly loading the JSON structure for the images in one window and binding images to urls in another
+7. True Cross-Platform testing
 
 ## Installation
 
