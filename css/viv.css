@@ -1,0 +1,62 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; outline: 0; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; cursor: default; }
+
+body { line-height: 1; -webkit-tap-highlight-color: transparent; }
+
+ol, ul { list-style: none; }
+
+sup { vertical-align: super; font-size: 60%; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+
+sub { vertical-align: sub; font-size: 68%; }
+
+a { outline: 0; text-decoration: none; }
+
+strong { font-weight: bold; }
+
+caption, th, td { text-align: left; font-weight: normal; }
+
+.clear:after { content: "."; display: block; height: 0; font-size: 0; clear: both; visibility: hidden; }
+
+.clear { min-height: 1px; }
+
+* html .clear { height: 1px; }
+
+ul, ul li { list-style-type: none; }
+
+.hidden { display: none !important; }
+
+nobr { white-space: nowrap; }
+
+a[href="#"] { cursor: default !important; }
+
+@font-face { font-family: 'Lato-Bold'; src: url("../fonts/lato-bol-webfont.eot"); src: url("../fonts/lato-bol-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bol-webfont.woff2") format("woff2"), url("../fonts/lato-bol-webfont.woff") format("woff"), url("../fonts/lato-bol-webfont.ttf") format("truetype"), url("../fonts/lato-bol-webfont.svg#latobold") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Lato-Light'; src: url("../fonts/lato-lig-webfont.eot"); src: url("../fonts/lato-lig-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-lig-webfont.woff2") format("woff2"), url("../fonts/lato-lig-webfont.woff") format("woff"), url("../fonts/lato-lig-webfont.ttf") format("truetype"), url("../fonts/lato-lig-webfont.svg#latolight") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Lato'; src: url("../fonts/lato-reg-webfont.eot"); src: url("../fonts/lato-reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-reg-webfont.woff2") format("woff2"), url("../fonts/lato-reg-webfont.woff") format("woff"), url("../fonts/lato-reg-webfont.ttf") format("truetype"), url("../fonts/lato-reg-webfont.svg#latoregular") format("svg"); font-weight: normal; font-style: normal; }
+.hidden { display: none; }
+
+body { -webkit-app-region: drag; width: 1024px; height: 768px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; margin: 0; padding: 0; background-color: #121212; font-family: Lato; letter-spacing: .25em; color: white; background-image: url("../images/background.png"); background-size: cover; background-repeat: no-repeat; }
+body strong { font-family: Lato-Bold; }
+body.index button { -webkit-app-region: no-drag; position: absolute; width: 165px; height: 165px; top: 429px; left: 445px; background-image: url("../images/icon_PhotosNearMe.png"); background-color: transparent; border: none; }
+body.index button:focus { outline: none; }
+body.index section { position: absolute; margin: 0 auto; }
+body.index section.spinner { z-index: 10; position: absolute; top: 438px; left: 452px; }
+body.index section.spinner img { width: 150px; height: 150px; }
+body.index section.gallery { -webkit-app-region: no-drag; left: 10px; top: 40px; height: 354px; width: 1034px; background: #242424; overflow: hidden; }
+body.index section.gallery .scroll-view ul { height: 146px; display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-align: start; -webkit-box-pack: center; list-style-type: none; margin-top: 10px; }
+body.index section.gallery .scroll-view ul li { position: relative; width: 500px; height: 334px; margin-right: 10px; }
+body.index section.gallery .scroll-view ul li img { width: 500px; height: 334px; }
+body.index section.gallery .scroll-view ul li:first-child { margin-left: 10px; }
+body.index section.inputFields { top: 620px; left: 238.5px; }
+body.index section.inputFields label { letter-spacing: initial; }
+body.index section.inputFields label input { -webkit-app-region: no-drag; border-radius: 6px; font-family: lato; font-size: 20px; }
+
+/*# sourceMappingURL=viv.css.map */

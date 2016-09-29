@@ -1,6 +1,6 @@
 ## Synopsis
 
-VIV.AI Code Sample
+VIV.AI Code Sample - playing with Electron, EurekAPI, Flickr
 by Shannon Norrell
 September 2016
 
@@ -18,7 +18,27 @@ Provide code examples and explanations of how to get the project.
 
 ## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+Using the flickr API.
+
+Flickr API Keys used are:
+	
+Key:
+68e0f65ed847ae64ec829d51a5d5e52e
+
+Secret:
+56c6a5eee1677f8
+
+- - - - - - - - - - - - - -
+Using EurekAPI to determine GeoLocation (the build of Chromium used in Electron throws Error 403 when using geolocation)
+EurekAPI Keys used are:
+myEurekAPIKeySAKRPYRHQR56B5S57V9Z
+(Note this is a 30 day trial started on 9/6/2016) after which this demo will break
+
+QueryString used: http://api.eurekapi.com/iplocation/v1.8/locateip?key=SAKRPYRHQR56B5S57V9Z&ip=15.65.244.14&format=JSON
+- - - - - - - - - - - - - -
+Using IPIFY to determine IP address
+
+QueryString used: https://api.ipify.org/?format=json to determine IP Address
 
 ## Tests
 
@@ -26,7 +46,7 @@ Jasmine tests go in spec folder
 
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+Shannon Norrell
 
 ## License
 

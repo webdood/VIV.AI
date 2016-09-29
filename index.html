@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head>
   <meta charset="UTF-8">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title></title>
+  <title>VIV.AI Coding Sample</title>
+  <link rel="stylesheet" type="text/css" href="css/viv.css">
+  <script src="./js/HPLibrary.js"></script>
+  <script src="./js/xscroller.js"></script>
 </head>
-<body>
+<body class="index">
 
+  <section id="pleaseWaitLoadingSpinner" class="hidden spinner">
+    <img src="./images/spinner.gif"/>
+  </section>
+
+  <section id="gallery" class="hidden gallery">
+    <div class="view scroll-view">
+      <nav id="gallery-contents" class="x-scrollable x-horizontal">
+      </nav>
+    </div>
+  </section>
+
+  <section class="inputFields">
+    <label>City: <input id="city" type="text" placeholder="Loading ..." readonly></label>
+    <label>Zip Code: <input id="zipCode" type="text" placeholder="Loading ..."></label>
+  </section>
+  <button></button>
 </body>
+
+<script>
+  require('./renderer.js');
+</script>
 </html>

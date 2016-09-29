@@ -1,0 +1,108 @@
+// index.scss
+@import "reset";
+@import "fonts";
+@import "responsive";
+
+.hidden { display: none; }
+
+body {
+  -webkit-app-region: drag; // Allows us to drag the entire Electron Application around
+  $bodyWidth: 1024px;
+  $bodyHeight: 768px;
+  width:$bodyWidth;
+  height: $bodyHeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  font-family: Lato;
+  letter-spacing: .25em;
+  color: white;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  strong {
+    font-family: Lato-Bold;
+  }
+  &.index {
+    button {
+      -webkit-app-region: no-drag;
+      position: absolute;
+      width: 165px;
+      height: 165px;
+      top: 429px;
+      left: 445px;
+      background-image: url('../images/icon_PhotosNearMe.png');
+      background-color:transparent;
+      border: none;
+    }
+    button:focus {
+      outline:none;
+    }
+    section {
+      position:absolute;
+      margin: 0 auto;
+      &.spinner {
+        z-index:10;
+        position:absolute;
+        top: 438px;
+        left: 452px;
+        img {
+          width:150px;
+          height:150px;
+        }
+      }
+      &.gallery {
+        -webkit-app-region: no-drag;
+        left: 10px;
+        top:40px;
+        height: 334px + 20px;
+        width: $bodyWidth + 10px;
+        background: #242424;
+        overflow: hidden;
+        .scroll-view {
+          ul {
+            height: 146px;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            -webkit-box-align: start;
+            -webkit-box-pack: center;
+            list-style-type:none;
+            margin-top:10px;
+            li {
+
+              position: relative;
+              width: 500px;
+              height: 334px;
+              margin-right:10px;
+              img {
+                width:500px;
+                height:334px;
+              }
+              &:first-child {
+                margin-left:10px;
+              }
+            }
+          }
+        }
+      }
+      &.inputFields {
+        top:620px;
+        $width:547px;   // not that necessary here. Just illustrating variables in scss ....
+        left: ($bodyWidth - $width)/2;
+        label {
+          letter-spacing: initial;
+          input {
+            -webkit-app-region: no-drag; // Note this prevents dragging of the window should the user wish to manually update input values
+            border-radius: 6px; // Note that I match your border-radius from the graphic just for fun
+            font-family: lato;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
